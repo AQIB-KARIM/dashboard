@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- oncontextmenu="return false" -->
+<html lang="en" oncontextmenu="return false">
+   
 
 <head>
     <meta charset="UTF-8">
@@ -32,11 +32,11 @@
             </div>
 
             <div id="strategyNavText" class="nav-tab-content">
-                <h3>StrategyTraders Dashboard</h3>
+                <h3>Strategy parameters VLI</h3>
             </div>
 
             <div id="tdAmeritradeNavText" class="nav-tab-content">
-                <h3>TD Ameritrade Traders Dashboard</h3>
+                <h3>TD Ameritrade parameters</h3>
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -93,7 +93,6 @@
 
             <div class="col-md-10">
                 <div id="Dashboard" class="tabcontent">
-
                     <div class="params_tab">
                         <button class="paramlinks" onclick="managedParameters(event, 'param1')">Manage
                             strategy parameters</button>
@@ -113,46 +112,46 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="row table_rows">
-                                    <div class="col-md-2 col-2">Spy_081922P350:</div>
+                                    <div class="col-md-2 col-3">Spy_081922P350:</div>
                                     <div class="col-md-2 col-2">3 Contracts</div>
                                     <div class="col-md-2 col-2">day pnl: $1.53</div>
                                     <div class="col-md-3 col-3">average price: <span>$ 0.02</span></div>
-                                    <div class="col-md-3 col-3">current price: <span>$ 1.02</span></div>
+                                    <div class="col-md-3 col-2">current price: <span>$ 1.02</span></div>
                                 </div>
                                 <div class="row table_rows">
-                                    <div class="col-md-2 col-2">LMT_081922C450:</div>
+                                    <div class="col-md-2 col-3">LMT_081922C450:</div>
                                     <div class="col-md-2 col-2">2 Contracts</div>
                                     <div class="col-md-2 col-2">day pnl: $1.53</div>
                                     <div class="col-md-3 col-3">average price: <span>$ 0.02</span></div>
-                                    <div class="col-md-3 col-3">current price: <span>$ 1.02</span></div>
+                                    <div class="col-md-3 col-2">current price: <span>$ 1.02</span></div>
                                 </div>
                                 <div class="row table_rows">
-                                    <div class="col-md-2 col-2">MDCN:</div>
+                                    <div class="col-md-2 col-3">MDCN:</div>
                                     <div class="col-md-2 col-2">1000000 Contracts</div>
                                     <div class="col-md-2 col-2">day pnl: $1.53</div>
                                     <div class="col-md-3 col-3">average price: <span>$ 0.02</span></div>
-                                    <div class="col-md-3 col-3">current price: <span>$ 1.02</span></div>
+                                    <div class="col-md-3 col-2">current price: <span>$ 1.02</span></div>
                                 </div>
                                 <div class="row table_rows">
-                                    <div class="col-md-2 col-2">HCMC:</div>
+                                    <div class="col-md-2 col-3">HCMC:</div>
                                     <div class="col-md-2 col-2">999800 Contracts</div>
                                     <div class="col-md-2 col-2">day pnl: $1.53</div>
                                     <div class="col-md-3 col-3">average price: <span>$ 0.02</span></div>
-                                    <div class="col-md-3 col-3">current price: <span>$ 1.02</span></div>
+                                    <div class="col-md-3 col-2">current price: <span>$ 1.02</span></div>
                                 </div>
                                 <div class="row table_rows">
-                                    <div class="col-md-2 col-2">CEI:</div>
+                                    <div class="col-md-2 col-3">CEI:</div>
                                     <div class="col-md-2 col-2">500 Contracts</div>
                                     <div class="col-md-2 col-2">day pnl: $1.53</div>
                                     <div class="col-md-3 col-3">average price: <span>$ 0.02</span></div>
-                                    <div class="col-md-3 col-3">current price: <span>$ 1.02</span></div>
+                                    <div class="col-md-3 col-2">current price: <span>$ 1.02</span></div>
                                 </div>
                                 <div class="row table_rows">
-                                    <div class="col-md-2 col-2">Spy_081922P415:</div>
+                                    <div class="col-md-2 col-3">Spy_081922P415:</div>
                                     <div class="col-md-2 col-2">2 Contracts</div>
                                     <div class="col-md-2 col-2">day pnl: $1.53</div>
                                     <div class="col-md-3 col-3">average price: <span>$ 0.02</span></div>
-                                    <div class="col-md-3 col-3">current price: <span>$ 1.02</span></div>
+                                    <div class="col-md-3 col-2">current price: <span>$ 1.02</span></div>
                                 </div>
 
                             </div>
@@ -189,27 +188,361 @@
 
                 </div>
 
+                <div id="Strategy" class="container tabcontent">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form_container">
+                                    <p>Broker*</p>
+                                    <select class="form-select select" aria-label="Default select example">
+                                        <option selected>TD Ameritrade</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
 
+                            <div class="col-md-6">
+                                <div class="form_container">
+                                    <p>Multiplier*</p>
+                                    <select class="form-select select" aria-label="Default select example">
+                                        <option selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
 
+                            <div class="col-md-6 bot">
+                                <div class="check_bot_activated mt-4 mx-2">
+                                    <img src="./images/green-online.png" width="40px" height="40px" />
+                                    Bot Activated
+                                </div>
+                                <p>Check to activate the bot</p>
+                            </div>
+                        </div>
+                        <hr class="line_break" />
 
-                <div id="Strategy" class="tabcontent">
-                    <h3>Strategy</h3>
-                    <p>Strategy PAge.</p>
+                        <div class="row">
+                            <div class="col-md-6 p-0">
+                                <div class="strategy_card">
+                                    <p class="head">Allowed discord channels</p>
+                                    <div class="row check_form_container">
+                                        <div class="col-md-3">
+                                            <input type="checkbox" id="mirror5k" name="mirror5k" value="mirror5k_25k">
+                                            <label for="mirror5k"> mirror 5k-25k</label>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <input type="checkbox" id="autobot25k" name="autobot25k" value="autobot25k">
+                                            <label for="autobot25k"> autobot 25k</label>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <input type="checkbox" id="mirror5k" name="mirror5k" value="mirror5k_25k">
+                                            <label for="mirror5k"> mirror 5k-25k</label>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <input type="checkbox" id="websitetest" name="websitetest"
+                                                value="websitetest">
+                                            <label for="websitetest"> website test</label>
+                                        </div>
+
+                                        <hr class="line_break mt-3" />
+
+                                        <div class="col-md-3">
+                                            <input type="checkbox" id="websitetest2" name="websitetest2"
+                                                value="websitetest2">
+                                            <label for="websitetest2"> website test-2</label>
+                                        </div>
+
+                                        <hr class="line_break mt-3" />
+
+                                        <div class="col-md-12">
+                                            <div class="trading_channels_container">
+                                                <p>Select your Trading Channels</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="strategy_card">
+                                    <p class="head">Allowed discord users</p>
+                                    <div class="row check_form_container">
+                                        <div class="col-md-4">
+                                            <input type="checkbox" id="ousBot#3492" name="ousBot#3492"
+                                                value="ousBot#3492">
+                                            <label for="ousBot#3492"> Out Bot#3492</label>
+                                        </div>
+
+                                        <div class="col-md-4 p-0">
+                                            <input type="checkbox" id="Kindredd" name="Kindredd" value="Kindredd">
+                                            <label for="Kindredd"> Kindredd(Options)#4009</label>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <input type="checkbox" id="hellojason#5643" name="hellojason#5643"
+                                                value="hellojason#5643">
+                                            <label for="hellojason#5643"> hellojason#5643</label>
+                                        </div>
+
+                                        <hr class="line_break mt-3" />
+
+                                        <div class="col-md-4">
+                                            <input type="checkbox" id="hellojason2#6473" name="hellojason2#6473"
+                                                value="hellojason2#6473">
+                                            <label for="websitetest"> hellojason2#6473</label>
+                                        </div>
+
+                                        <div class="col-md-4 p-0">
+                                            <input type="checkbox" id="EvaPanda" name="EvaPanda" value="EvaPanda">
+                                            <label for="EvaPanda"> EvaPanda (Options)#1676</label>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <input type="checkbox" id="thun-25k" name="thun-25k" value="thun-25k">
+                                            <label for="thun-25k"> thun-25k</label>
+                                        </div>
+
+                                        <hr class="line_break mt-3" />
+
+                                        <div class="col-md-4 cool_bot">
+                                            <input type="checkbox" id="cool_boot#0000" name="cool_boot#0000"
+                                                value="cool_boot#0000">
+                                            <label for="cool_boot#0000"> Cool bot#0000</label>
+                                        </div>
+
+                                        <div class="col-md-4 forward p-0">
+                                            <input type="checkbox" id="forward_msg#6726" name="forward_msg"
+                                                value="forward_msg">
+                                            <label for="forward_msg"> Forward Message#6726</label>
+                                        </div>
+
+                                        <hr class="line_break mt-3" />
+
+                                        <div class="col-md-12">
+                                            <div class="trading_channels_container">
+                                                <p>Select your Trading Channels</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="line_break" />
+
+                            <div class="col-md-12">
+                                <div class="submit_container">
+                                    <button class="submit" type="submit">Submit</button>
+                                    <button class="cancel">Cancel</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
                 </div>
 
-                <div id="TD_Ameritrade" class="tabcontent">
-                    <h3>TD Ameritrade</h3>
-                    <p>TD Ameritrade Page.</p>
+                <div id="TD_Ameritrade" class="container tabcontent">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="steps_container">
+                                <h5>Before filling those parameters, you need to go through the following steps:</h5>
+                                <ul>
+                                    <li>Create a TD Ameritrade Developer's account <span>here.</span></li>
+                                    <li>Once you are logged in, create an application <span>here.</span>IMPORTANT: use
+                                        <a href="https://thuanle.net/autotrader/webhook/"
+                                            target="black"><span>https://thuanle.net/autotrader/webhook/</span></a> for
+                                        the callback URL parameter to simply the oauth process on this website.
+                                    </li>
+                                    <li>Once your app is created and approved, you will recieve your consumer key, also
+                                        known as the Client ID. This will be visible in TDA's app listing page.Record
+                                        this key,since it is necessary to access most API endpoints.</li>
+                                    <li>Get your TD Ameritrade Account number (account ID). You can get it by logging in
+                                        the TD Ameritrade website . The Account number is isually a 9 dight
+                                        number (like 23242534) </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="line_break mt-2" />
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form_input_container">
+                                <label>Consumer Key*</label>
+                                <input class="form-control" type="text" />
+                                <p>The Consumer Key of the app created on the TD Ameritrade Developer's account.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form_input_container">
+                                <label>Callback url*</label>
+                                <input class="form-control" type="text" />
+                                <p>The Consumer Key of the app created on the TD Ameritrade Developer's account.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form_input_container">
+                                <label>Account id*</label>
+                                <input class="form-control" type="text" />
+                                <p>The TD Ameritrade account number you will be trading on</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="line_break mt-2" />
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="submit_container">
+                                <button class="submit" type="submit">Submit</button>
+                                <button class="cancel">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="Profile" class="tabcontent">
-                    <h3>Profile</h3>
-                    <p>Profile Page.</p>
+                <div id="Profile" class="container tabcontent">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="profile_container">
+                                <h5>PROFILE</h5>
+                                <div class="img_container">
+                                    <img src="./images/lawyer1.png" width="100px" height="100px" />
+                                    <p>User name here</p>
+                                </div>
+                                <div class="follow_edit_container">
+                                    <div>
+                                        <button class="follow">Follow</button>
+                                    </div>
+
+                                    <div>
+                                        <button class="edit_profile">Edit Profile</button>
+                                    </div>
+                                </div>
+
+                                <div class="about_container">
+                                    <h3>About</h3>
+                                    <div class="about_followers_container">
+                                        <div>
+                                            <p>Followers</p>
+                                        </div>
+
+                                        <div>
+                                            <span>0</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="about_followers_container">
+                                        <div>
+                                            <p>Following</p>
+                                        </div>
+
+                                        <div>
+                                            <span>0</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="about_followers_container">
+                                        <div>
+                                            <p>Date Joined</p>
+                                        </div>
+
+                                        <div>
+                                            <span>01/01/2022</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-9">
+                            <div class="trader_profile_card">
+                                <h5>TRADERS PROFILE</h5>
+
+                                <h6>User React Alerts</h6>
+                                <table class="table table_content mt-3">
+                                    <thead>
+                                        <tr>
+                                            <th>Person</th>
+                                            <th>Trade</th>
+                                            <th>Time</th>
+                                            <th>Result</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Lorem ipsum is simply dummy</td>
+                                            <td>123.456</td>
+                                            <td>01/01/2022</td>
+                                            <td>Lorem ipsum is simply dummy</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem ipsum is simply dummy</td>
+                                            <td>123.456</td>
+                                            <td>01/01/2022</td>
+                                            <td>Lorem ipsum is simply dummy</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem ipsum is simply dummy</td>
+                                            <td>123.456</td>
+                                            <td>01/01/2022</td>
+                                            <td>Lorem ipsum is simply dummy</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Lorem ipsum is simply dummy</td>
+                                            <td>123.456</td>
+                                            <td>01/01/2022</td>
+                                            <td>Lorem ipsum is simply dummy</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="Contact" class="tabcontent">
-                    <h3>Contact</h3>
-                    <p>Contact Page.</p>
+                <div id="Contact" class="container tabcontent">
+                    <div class="row">
+                        <div class="col-md-12">
+                          <div class="contact_form_container">
+                            <div class="logo_container">
+                                <img src="./images/contact_form_logo.png"/>
+                            </div>
+
+                            <div class="contact_us_main">
+                              <h4>CONTACT US</h4>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                              <form>
+                                <label>TITLE</label>
+                                <input type="text" placeholder="Enter title here" class="form-control"/>
+
+                                <label>EMAIL</label>
+                                <input type="email" placeholder="Enter email address" class="form-control"/>
+
+                                <label>MESSAGE</label>
+                                <textarea class="form-control" id="w3review" name="w3review" rows="4" cols="50" placeholder="Description" ></textarea>
+
+                                <div class="submit_btn_container">
+                                    <button>Submit</button>
+                                </div>
+                              </form>
+                            </div>
+                      
+                          </div>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -222,10 +555,6 @@
         </div>
     </div>
     </div>
-
-
-
-
 
 
 
